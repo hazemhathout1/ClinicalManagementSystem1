@@ -2,8 +2,8 @@
 
 void EditRecord()
 {
-	char nAge,nGen,nID;
-	int y;
+	char nAge,nGen,nID,x;
+	int y,c;
 	printf("Please enter ID:");
 	scanf("%d",&nID);
 	struct Node*node=head;
@@ -39,12 +39,23 @@ void EditRecord()
 					printf("\t=========================================\n");
 					return;
 				}
+				do{
 				printf("Available slots:\n");
 				printf("\t\t1)2:00PM-2:30PM\n\t\t2)2:30PM-3:00PM\n\t\t3)3:00PM-3:30PM\n\t\t4)4:00PM-4:30PM\n\t\t5)5:00PM-5:30pm\n");
 				printf("Please enter the slot:");
-				scanf("%d",&node->Res);
-			}
+				scanf("%d",&x);
+				c=Rocc1(x);
+				if(c)
+				{
+				printf("\t =======================================\n");
+				printf("\t\tThis Slot is already reserved\n");
+				printf("\t =======================================\n");
+				}
+				}while(x>5||c>0);
+				
+				node->Res=x;
 		}
 		node=node->next;
 	}
+}
 }
