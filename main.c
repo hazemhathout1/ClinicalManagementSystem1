@@ -19,7 +19,7 @@ int main()
 	switch(a)
 	{
 		case 1:
-		AdminMode(&z);//Password:1234
+		AdminMode(&z);//Password for admin mode:1234
 		break;
 		case 2:
 		UserMode();
