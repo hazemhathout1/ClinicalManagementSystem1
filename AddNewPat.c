@@ -7,12 +7,8 @@ void AddNewPatient()
 	u8 age;
 	u8 id;
 	u8 gend;
-/* 	u8 name1[10];
+	u8 name1[10];
 	u8 name2[10];
-	printf("Please enter First name:");
-	scanf(" %s",&name1);
-	printf("Please enter second name:");
-	scanf(" %s",&name2); */
 	printf("please enter patient ID:");
 	scanf("%d",&id);
 	int z=occ(id);

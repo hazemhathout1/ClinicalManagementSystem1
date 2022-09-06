@@ -8,20 +8,18 @@ struct Node
 	u8 Gender;
 	u8 age;
 	u8 Res;
-	/* u8 *F_name;
-	u8 *L_name;	 */
+	u8 F_name[20];
+	u8 L_name[20];	
 	struct Node*next;
 }*head;
 
-void push(u8 new_data,u8 new_age,u8 Gend/* ,u8 *name1,u8 *name2 */)
+void push(u8 new_data,u8 new_age,u8 Gend)
 {
 	struct Node* new_node=(struct Node*)malloc(sizeof(struct Node));
 	new_node->data=new_data;
 	new_node->age=new_age;
 	new_node->Gender=Gend;
 	new_node->Res=0;
-/* 	new_node->F_name=name1;
-	new_node->L_name=name2; */
 	new_node->next=NULL;
 	if(head==NULL)
 	{
