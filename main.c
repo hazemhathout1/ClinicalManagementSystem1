@@ -3,8 +3,7 @@
 #include"STD_Types.h"
 #include"Admin.c"
 #include"user.c"
-//Hazem Mahmoud
-//Hossam
+
 
 int main()
 {
