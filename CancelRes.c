@@ -26,10 +26,12 @@ void CancelReservation()
 				return;
 			}
 			node->Res=0;
+			printf("\t=============================================\n");
+			printf("\t\tReservation is canceled succefully.\n");
+			printf("\t=============================================\n");
+			return;
 		}
 		node=node->next;
 	}
-	printf("\t=============================================\n");
-	printf("\t\tReservation is canceled succefully.\n");
-	printf("\t=============================================\n");
+	
 }
